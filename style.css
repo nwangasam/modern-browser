@@ -1,0 +1,262 @@
+:root {
+  --white: #FFF;
+  --light-grey: #F8F2FF;
+  --main-dark-blue-1: #443C77;
+  --main-dark-blue-2: #39316C;
+  --main-light-blue: #9498B8;
+  --main-orange: #FF9B52;
+  --blue-color: #3DC6FA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+html {
+  font-family: "Open sans", sans-serif;
+  font-size: 100%;
+}
+
+body {
+  width: 100%;
+  background-color: var(--white);
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--main-dark-blue-2);
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--main-dark-blue-2);
+}
+
+p, li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--main-dark-blue-1);
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  border-radius: 50px;
+  color: var(--main-dark-blue-2);
+  line-height: 60px;
+  text-align: center;
+}
+
+.btnOrange {
+  color: var(--white);
+  background: var(--main-orange);
+}
+
+/*----- HEADER ------*/
+header, footer {
+  width: 80%;
+  padding: 0 10%;
+}
+
+header .logo, footer .logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--main-dark-blue-2);
+  vertical-align: middle;
+  width: 15%;
+  display: inline-block;
+}
+
+header .mobile, footer .mobile {
+  display: none;
+}
+
+header ul, footer ul {
+  width: 80%;
+  display: inline-block;
+  list-style: none;
+  vertical-align: middle;
+}
+
+header ul li, footer ul li {
+  display: inline-block;
+  margin: 0 25px;
+  line-height: 80px;
+}
+
+header ul li:last-child, footer ul li:last-child {
+  float: right;
+  margin: 0;
+}
+
+header ul li span, footer ul li span {
+  color: var(--main-orange);
+}
+
+.header-content {
+  margin: 140px 0 170px 10%;
+  min-width: 500px;
+  width: 27%;
+}
+
+.header-content .btn:last-child {
+  margin-left: 20px;
+}
+
+.header-content p {
+  width: 80%;
+  margin: 13px 0 40px 0;
+}
+
+.browser-white, .browser-dark {
+  display: block;
+  width: 80%;
+  padding: 0 10%;
+}
+
+.element-1 {
+  background-image: url("./images/shapes-flow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 220vh;
+  width: 80%;
+  padding: 0 10%;
+  position: absolute;
+  top: 210px;
+  left: 0;
+  opacity: .85;
+  z-index: -11;
+}
+
+.features {
+  margin: 150px auto 150px;
+  width: 70%;
+  padding: 0 15%;
+}
+
+.features h3 {
+  margin-bottom: 13px;
+}
+
+.features ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features ul li {
+  width: 40%;
+  padding: 50px 5%;
+}
+
+.darkTheme {
+  background: var(--blue-color);
+  width: 80%;
+  padding: 2% 10% 0;
+  height: 90vh;
+}
+
+.darkTheme p, .darkTheme h2 {
+  text-align: center;
+  color: var(--white);
+}
+
+.darkTheme p {
+  margin-bottom: 45px;
+}
+
+.supports {
+  margin: 150px 0;
+  width: 80%;
+  padding: 0 10%;
+}
+
+.supports .quick-editor, .supports .multi-browser {
+  width: 80%;
+  padding: 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 150px;
+}
+
+.supports .quick-editor .content, .supports .multi-browser .content {
+  width: 45%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 45px;
+}
+
+.supports .quick-editor .content h2, .supports .multi-browser .content h2 {
+  margin-bottom: 13px;
+}
+
+.supports .quick-editor .content p, .supports .multi-browser .content p {
+  margin-bottom: 40px;
+}
+
+.supports .quick-editor .content a, .supports .multi-browser .content a {
+  height: 60px;
+  width: 180px;
+  border-radius: 50px;
+  display: inline-block;
+  line-height: 60px;
+  text-align: center;
+}
+
+.supports .quick-editor img, .supports .multi-browser img {
+  width: 50%;
+  display: block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.supports .quick-editor .content {
+  padding-right: 10%;
+}
+
+.supports .multi-browser .content {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  padding-left: 10%;
+}
+
+footer .logo {
+  line-height: 100px;
+}
+
+footer ul {
+  float: right;
+}
+
+footer ul li {
+  line-height: 100px;
+}
+
+footer ul li img {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+/*# sourceMappingURL=style.css.map */

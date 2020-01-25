@@ -1,0 +1,245 @@
+:root {
+    --white: #FFF;
+    --light-grey: #F8F2FF;
+    --main-dark-blue-1: #443C77;
+    --main-dark-blue-2: #39316C;
+    --main-light-blue: #9498B8;
+
+    --main-orange: #FF9B52;
+    --blue-color: #3DC6FA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+html {
+    font-family: "Open sans", sans-serif;
+    font-size: 100%;
+}
+
+body {
+    width: 100%;
+    background-color: var(--white);
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--main-dark-blue-2);
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--main-dark-blue-2);
+}
+
+p, li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--main-dark-blue-1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    border-radius: 50px;
+    color: var(--main-dark-blue-2);
+
+    line-height: 60px;
+    text-align: center;
+}
+
+.btnOrange {
+    color: var(--white);
+    background: var(--main-orange);
+}
+
+/*----- HEADER ------*/
+header, footer {
+    width: 80%;
+    padding: 0 10%;
+    
+    
+    .logo {
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--main-dark-blue-2);
+        vertical-align: middle;
+        width: 15%;
+        display: inline-block;
+    }
+    .mobile {
+        display: none;
+    }
+    
+    ul {
+        width: 80%;
+        display: inline-block;
+        list-style: none;
+        vertical-align: middle;
+        
+        li {
+            display: inline-block;
+            margin: 0 25px;
+            line-height: 80px;
+
+            &:last-child {
+                float: right;
+                margin: 0;
+            }
+            span {
+                color: var(--main-orange);
+            }
+        }
+    }
+
+}
+
+.header-content {
+    margin: 140px 0 170px 10%;
+    
+    min-width: 500px;
+    width: 27%;
+
+    .btn:last-child {
+        margin-left: 20px;
+    }
+
+    p {
+        width: 80%;
+        margin: 13px 0 40px 0;
+    }
+}
+
+.browser-white, .browser-dark {
+    display: block;
+    width: 80%;
+    padding: 0 10%;
+}
+
+.element-1 {
+    background-image: url('./images/shapes-flow.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;   
+    height: 220vh;
+
+    width: 80%;
+    padding: 0 10%;
+    position: absolute;
+    top: 210px;
+    left: 0;
+    opacity: .85;
+    z-index: -11;
+}
+
+.features {
+    margin: 150px auto 150px;
+    width: 70%;
+    padding: 0 15%;
+
+    h3 {
+        margin-bottom: 13px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            width: 40%;
+            padding: 50px 5%;
+        }
+    }
+}
+
+.darkTheme {
+    background: var(--blue-color);
+    width: 80%;
+    padding: 2% 10% 0;
+    height: 90vh;
+    
+    p, h2 {
+        text-align: center;
+        color: var(--white);
+    }
+
+    p { margin-bottom: 45px; }
+}
+
+.supports {
+    margin: 150px 0;
+    width: 80%;
+    padding: 0 10%;
+    
+    
+    .quick-editor, .multi-browser {
+        width: 80%;
+        padding: 0 10%;
+        display: flex;
+        margin-bottom: 150px;
+
+        .content {
+            width: 45%;
+            align-self: flex-end;
+            margin-bottom: 45px;
+            h2 {
+                margin-bottom: 13px;
+            }
+            p { margin-bottom: 40px; }
+
+            a {
+                height: 60px;
+                width: 180px;
+                border-radius: 50px;
+                display: inline-block;
+                line-height: 60px;
+                text-align: center;
+            }
+        }
+        img {
+            width: 50%;
+            display: block;
+            align-self: flex-end;
+        }
+    }
+    .quick-editor .content { padding-right: 10%; }
+    .multi-browser .content {
+        order: 2;
+        padding-left: 10%;
+    }
+}
+
+footer {
+    .logo {
+        line-height: 100px;
+    }
+    ul {
+        li {
+            line-height: 100px;
+            img {
+                margin-right: 4px;
+                vertical-align: middle;
+            }
+        }
+        float: right;
+    }
+}
